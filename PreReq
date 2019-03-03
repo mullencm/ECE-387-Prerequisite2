@@ -1,0 +1,39 @@
+//
+//  ViewController.swift
+//  PreReq
+//
+//  Created by Connor Mac on 3/3/19.
+//  Copyright © 2019 Connor Mullenax. All rights reserved.
+//
+
+import UIKit
+
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var Background: UIImageView!
+    @IBOutlet weak var Super: UIButton!
+    @IBOutlet weak var Holder: UIView!
+    @IBOutlet weak var Mario: UIImageView!
+    @IBOutlet weak var Pipe: UIImageView!
+    @IBOutlet weak var Goombas: UIImageView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+
+   
+    @IBAction func SuperButtonPressed(_ sender: Any) {
+        Holder.isHidden = false
+        Background.isHidden = true
+        Super.isHidden = true
+        
+        UIView.animate(withDuration: 2.3, animations: {
+            self.Mario.frame = CGRect(x: 0, y: 50, width: 252, height: 319)
+        } ) { (finished) in
+            }
+    }
+    }
+   
